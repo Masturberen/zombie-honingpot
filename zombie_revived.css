@@ -2997,3 +2997,35 @@ layout-mobile .detailPagePrimaryContent {
     width: 25em;
   }
 }
+/* === HONINGPOT LOGO OVERRIDE === */
+
+/* Verberg standaard Jellyfin <img> logo */
+.headerLogo img,
+.pageTitleWithDefaultLogo img {
+  display: none !important;
+}
+
+/* Injecteer Honingpot logo */
+.headerLogo,
+.pageTitleWithDefaultLogo {
+  background-image: url("./logo/jellyfin-logo-dark.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
+  min-width: 220px;
+  min-height: 48px;
+}
+
+/* Light theme */
+.skin-light .headerLogo,
+.skin-light .pageTitleWithDefaultLogo {
+  background-image: url("./logo/jellyfin-logo-light.png") !important;
+}
+
+/* Login screen */
+.loginLogo {
+  background-image: url("./logo/jellyfin-logo-dark.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
